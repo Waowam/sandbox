@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
 	pageEncoding="ISO-8859-1"%>
-
-<!-- Forms
-================================================== -->
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<!-- Forms ================================================== -->
 <div class="bs-docs-section">
 	<div class="row">
 		<div class="col-lg-12">
@@ -14,7 +13,7 @@
 	<div class="row">
 		<div class="col-lg-6">
 			<div class="well">
-				<form class="bs-example form-horizontal">
+				<form:form class="bs-example form-horizontal">
 					<fieldset>
 						<legend>Legend</legend>
 						<div class="form-group">
@@ -85,7 +84,7 @@
 							</div>
 						</div>
 					</fieldset>
-				</form>
+				</form:form>
 			</div>
 		</div>
 		<div class="col-lg-4 col-lg-offset-1">
