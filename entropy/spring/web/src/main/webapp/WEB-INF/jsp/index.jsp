@@ -13,6 +13,7 @@
 <body>
 	<p><a href="${pageContext.request.contextPath}/template.jsp">Template</a></p>
 	<p><a href="${pageContext.request.contextPath}/tiles3">Tiles 3</a></p>
+	<p><a href="${pageContext.request.contextPath}/form1">Form 1</a></p>
 </body>
 </html>
 </jsp:root>
