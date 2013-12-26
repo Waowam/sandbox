@@ -22,10 +22,20 @@
 	<context:annotation-config />
 	<context:component-scan base-package="com.github.ppdl.entropy.entropy" />
 	<context:property-placeholder location="classpath:/application.properties" />
+	
+	<bean id="tilesConfigurer" class="org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles/defs/default.xml</value>
+			</list>
+		</property>
+	</bean>
+	
 	<mvc:resources location="WEB-INF/static" mapping="/static/**"/>
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
 		<property name="basename" value="views"/>
 	</bean>
 	<mvc:view-controller path="/" view-name="index"/>
+	<mvc:view-controller path="/tiles3" view-name="tiles3"/>
 	<mvc:annotation-driven />
 </beans>
