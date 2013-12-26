@@ -4,22 +4,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta charset="utf-8">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/bootstrap/3.0.3/css/bootstrap.css" media="screen">
-<link rel="stylesheet" href="${pageContext.request.contextPath}/static/assets/css/bootswatch.min.css">
-<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-<!--[if lt IE 9]>
-  <script src="${pageContext.request.contextPath}/static/html5shiv/3.7.0-10/html5shiv.js"></script>
-  <script src="${pageContext.request.contextPath}/static/respond/1.4.1/respond.min.js"></script>
-<![endif]-->
-<title><tiles:getAsString name="title" /></title>
+	<title><tiles:getAsString name="title" /></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/bootstrap/3.0.3/css/flatly.min.css" media="screen">
+	<link rel="stylesheet" href="${pageContext.request.contextPath}/static/assets/css/bootswatch.min.css">
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
+	<script src="${pageContext.request.contextPath}/static/html5shiv/3.7.0-10/html5shiv.js"></script>
+	<script src="${pageContext.request.contextPath}/static/respond/1.4.1/respond.min.js"></script>
+	<![endif]-->
 </head>
 <body>
-	<tiles:insertAttribute name="header" />
-	<tiles:insertAttribute name="menu" />
-	<tiles:insertAttribute name="body" />
-	<tiles:insertAttribute name="footer" />
+	<div class="navbar navbar-default navbar-fixed-top">
+		<div class="container">
+			<tiles:insertAttribute name="header" />
+		</div>
+	</div>
+	<div class="container">
+		<tiles:insertAttribute name="body" />
+		<footer>
+			<tiles:insertAttribute name="footer" />
+		</footer>
+	</div>
+	<script src="${pageContext.request.contextPath}/static/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+	<script src="${pageContext.request.contextPath}/static/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+	<script src="${pageContext.request.contextPath}/static/assets/js/bootswatch.js"></script>
 </body>
 </html>
