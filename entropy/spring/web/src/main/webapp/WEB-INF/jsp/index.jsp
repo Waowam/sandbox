@@ -11,7 +11,8 @@
 <title>Index (WEB-INF) page</title>
 </head>
 <body>
-
+	<p><a href="${pageContext.request.contextPath}/template.jsp">Template</a></p>
+	<p><a href="${pageContext.request.contextPath}/tiles3">Tiles 3</a></p>
 </body>
 </html>
 </jsp:root>
