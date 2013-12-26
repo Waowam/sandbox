@@ -31,7 +31,7 @@
 		</property>
 	</bean>
 	
-	<mvc:resources location="WEB-INF/static" mapping="/static/**"/>
+	<mvc:resources location="/WEB-INF/static/" mapping="/static/**"/>
 	<bean id="viewResolver" class="org.springframework.web.servlet.view.ResourceBundleViewResolver">
 		<property name="basename" value="views"/>
 	</bean>
