@@ -15,7 +15,6 @@
     <![endif]-->
   </head>
   <body>
-    <script src="${pageContext.request.contextPath}/static/assets/js/bsa.js"></script>
 
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
